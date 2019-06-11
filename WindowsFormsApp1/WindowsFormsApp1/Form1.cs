@@ -12,14 +12,44 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        List<Fruta> lista;
+
         public Form1()
         {
+
             InitializeComponent();
+            lista = new List<Fruta>();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtNome.Text != "")
+            {
+                Fruta f = new Fruta();
+                f.nome = txtNome.Text;
+                f.quantidade = Convert.ToInt32(nudQuantidade.Value);
+                f.preco = Convert.ToDouble(nudPreco.Text);
+                if (rbMadura.Checked)
+                    f.tipo = "Madura";
+                else
+                    f.tipo = "Verde";
 
+                lista.Add(f);
+                Registros();
+
+
+
+
+
+            }
         }
+
+        private void Registros()
+        {
+            dgvRegistro.DataSource = null;
+            dgvRegistro.DataSource = lista;
+         }
     }
+
 }
