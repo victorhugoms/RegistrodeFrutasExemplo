@@ -114,6 +114,7 @@
             // 
             // nudQuantidade
             // 
+            this.nudQuantidade.BackColor = System.Drawing.SystemColors.Window;
             this.nudQuantidade.Location = new System.Drawing.Point(75, 65);
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(100, 20);
