@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
                 Fruta f = new Fruta();
                 f.nome = txtNome.Text;
                 f.quantidade = Convert.ToInt32(nudQuantidade.Value);
-                f.preco = Convert.ToDouble(nudPreco.Text);
+                f.preco = Convert.ToDouble(nudPreco.Value);
                 if (rbMadura.Checked)
                     f.tipo = "Madura";
                 else
