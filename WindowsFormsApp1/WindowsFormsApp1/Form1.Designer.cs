@@ -33,16 +33,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbMadura = new System.Windows.Forms.RadioButton();
             this.nudQuantidade = new System.Windows.Forms.NumericUpDown();
             this.nudPreco = new System.Windows.Forms.NumericUpDown();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,25 +82,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbMadura);
             this.groupBox1.Location = new System.Drawing.Point(10, 137);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(16, 34);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Madura ";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -111,6 +99,18 @@
             this.radioButton2.TabIndex = 1;
             this.radioButton2.Text = "Verde";
             this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // rbMadura
+            // 
+            this.rbMadura.AutoSize = true;
+            this.rbMadura.Checked = true;
+            this.rbMadura.Location = new System.Drawing.Point(16, 34);
+            this.rbMadura.Name = "rbMadura";
+            this.rbMadura.Size = new System.Drawing.Size(64, 17);
+            this.rbMadura.TabIndex = 0;
+            this.rbMadura.TabStop = true;
+            this.rbMadura.Text = "Madura ";
+            this.rbMadura.UseVisualStyleBackColor = true;
             // 
             // nudQuantidade
             // 
@@ -127,13 +127,13 @@
             this.nudPreco.Size = new System.Drawing.Size(100, 20);
             this.nudPreco.TabIndex = 6;
             // 
-            // dataGridView1
+            // dgvRegistro
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 288);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRegistro.Location = new System.Drawing.Point(10, 288);
+            this.dgvRegistro.Name = "dgvRegistro";
+            this.dgvRegistro.Size = new System.Drawing.Size(240, 150);
+            this.dgvRegistro.TabIndex = 7;
             // 
             // btnEnviar
             // 
@@ -151,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 450);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.nudPreco);
             this.Controls.Add(this.nudQuantidade);
             this.Controls.Add(this.groupBox1);
@@ -165,7 +165,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,10 +179,10 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbMadura;
         private System.Windows.Forms.NumericUpDown nudQuantidade;
         private System.Windows.Forms.NumericUpDown nudPreco;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRegistro;
         private System.Windows.Forms.Button btnEnviar;
     }
 }
